@@ -12,3 +12,6 @@ frontend/dist/
 # Misc
 .DS_Store
 *.env
+
+# Dev/test helpers
+frontend/verify.cjs
