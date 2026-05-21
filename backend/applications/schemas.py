@@ -1,4 +1,4 @@
-\from datetime import datetime
+from datetime import datetime
 from typing import Optional
 from ninja import Schema
 from applications.models import ApplicationType, Status

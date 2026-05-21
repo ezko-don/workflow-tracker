@@ -59,8 +59,8 @@ def submit_application(request, app_id: int):
     except Application.DoesNotExist:
         return 404, {"detail": "Application not found."}
 
-    if app.status != Status.DRAFT:
-        return 400, {"detail": "Only Draft applications can be submitted."}
+    if app.status not in {Status.DRAFT, Status.NEED_MORE_INFORMATION}:
+        return 400, {"detail": "Only Draft or Need More Information applications can be submitted."}
 
     app.status = Status.SUBMITTED
     app.submitted_at = timezone.now()
