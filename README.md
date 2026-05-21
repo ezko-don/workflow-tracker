@@ -2,6 +2,20 @@
 
 A mini application workflow tracker built with **Django + Django Ninja** (backend REST API) and **React + Vite** (frontend).
 
+## Screenshots
+
+| Application List | Application Detail |
+|---|---|
+| ![Application List](screenshots/01-application-list.png) | ![Detail – Draft](screenshots/03-detail-draft.png) |
+
+| Reviewer Decision Modal | Approved Application |
+|---|---|
+| ![Decision Modal](screenshots/06-reviewer-decision-modal.png) | ![Approved](screenshots/08-detail-approved.png) |
+
+> All screens: [screenshots/](screenshots/)
+
+---
+
 ## Workflow
 
 ```
